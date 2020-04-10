@@ -1,0 +1,35 @@
+.z-editor-content {
+    height: 300px;
+    position: relative;
+    z-index: 100;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 10px;
+    outline:none;
+}
+
+.z-editor-content p {
+    margin: 0;
+}
+
+.z-editor-menu {
+    background-color: #fcfbfc;
+    border: 1px solid #ccc;
+    min-height: 25px;
+    padding: 4px 5px;
+    display: flex;
+}
+.z-editor-menu-item {
+    height: 30px;
+    line-height: 30px;
+    flex-basis: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.z-editor-menu-item:hover {
+    background-color: #e8e8e8;
+}
+.z-menu-active {
+    background-color: #e8e8e8;
+}
