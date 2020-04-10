@@ -49,7 +49,7 @@ export default class Command {
     
                 if(cb) cb()
                 resolve()
-            }, 1000)
+            }, name === 'bold' ? 10000 : 1000)
         })
 
         // // 触发 onchange

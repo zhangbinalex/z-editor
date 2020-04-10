@@ -57,6 +57,7 @@ class Editor {
         let contentEle = this.contentEle
         function handleSelectionChange(e){
             console.log('光标可能改变')
+            // 若选择一些文字后改变选区到其中某个文字处，同步获取getSelection().getRangeAt(0)获得的range并不会更新
             setTimeout(() => {
                 self.selection.saveRange()
                 self.menus.updateActive()

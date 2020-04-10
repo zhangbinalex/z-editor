@@ -59,7 +59,7 @@ export default class Selection {
 
         try {
             // 插入 &#8203
-            await editor.cmd.exec('insertHTML', '&#8203;')
+            await editor.cmd.exec('insertHTML', ' ')
             
             // 修改 offset 位置
             range.setEnd(range.endContainer, range.endOffset + 1)
